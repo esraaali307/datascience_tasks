@@ -8,10 +8,13 @@ Created on Sun Jun 23 13:12:26 2019
 import urllib2
 #import ssl
 from lib.crawler import Crawler
+import scrapy
 
 #from bs4 import BeautifulSoup
-#import requests
-
+import requests
+class BrickSetSpider(scrapy.Spider):
+    name = 'brick_spider'
+    start_urls = ['https://en.wikipedia.org/wiki/Wikipedia']
 url = input ('enter url : ')
 no_links = int (input('enter position of philosophy')) #number of links between first link and philosophy 
 counter = 0
