@@ -7,6 +7,7 @@ Created on Sun Jun 23 13:12:26 2019
 
 import urllib2
 #import ssl
+from lib.crawler import Crawler
 
 #from bs4 import BeautifulSoup
 #import requests
